@@ -1,1 +1,2 @@
-python bot_email_to_discord.py
+web: python bot_email_to_discord.py
+
