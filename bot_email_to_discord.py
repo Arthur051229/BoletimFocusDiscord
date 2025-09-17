@@ -18,6 +18,13 @@ client = discord.Client(intents=intents)
 
 async def checar_email():
     while True:
+        agora = datetime.datetime.now()
+        # Se já passou das 11h da manhã de segunda, para o bot
+        if agora.weekday() == 0 and agora.hour >= 11:
+            print("⏰ Hora de desligar o bot!")
+            await client.close()  # fecha o bot
+            break
+
         print("🔍 Checando novos e-mails...")
 
         with imapclient.IMAPClient(IMAP_SERVER) as imap:
