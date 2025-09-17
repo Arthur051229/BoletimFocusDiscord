@@ -4,7 +4,6 @@ import imapclient
 import pyzmail
 import os
 
-run = python bot_email_to_discord.py
 
 # CONFIGURAÇÕES — personalize aqui:
 EMAIL = "boletimfocus190178@gmail.com"
